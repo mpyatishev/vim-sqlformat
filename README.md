@@ -1,6 +1,8 @@
 # vim-sqlparse
 
-Simple plugin for formatting SQL using sqlparse. Inspired by https://github.com/chaosong/orz-scripts/tree/master/vim-sql-formatter
+Simple plugin for formatting SQL using sqlparse.
+
+Inspired by https://github.com/chaosong/orz-scripts/tree/master/vim-sql-formatter
 
 ## Requirements
 
@@ -18,4 +20,4 @@ NeoBundle 'mpyatishev/vim-sqlparse'
 
 ## Using
 
-Plugin sets formatexpr for filetype sql, so just use gq for format SQL.
+Plugin sets `formatexpr` for filetype `sql`, so just use `gq` for format SQL.
