@@ -1,4 +1,4 @@
-# vim-sqlparse
+# vim-sqlformat
 
 Simple plugin for formatting SQL using sqlparse.
 
@@ -15,7 +15,7 @@ sudo pip install sqlparse
 
 Include line to your .vimrc:
 ```
-NeoBundle 'mpyatishev/vim-sqlparse'
+NeoBundle 'mpyatishev/vim-sqlformat'
 ```
 
 ## Using
