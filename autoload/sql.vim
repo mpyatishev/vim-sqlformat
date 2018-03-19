@@ -3,14 +3,14 @@ if exists("sqlparse")
 endif
 let sqlparse = 1
 
-if !has('python')
+if !has('python') and !has('python3')
     echo "Error: Required vim compiled with +python"
     finish
 endif
 
 function! sql#FormatSQL()
 
-python << EOF
+python3 << EOF
 
 import vim
 import sqlparse
@@ -26,8 +26,8 @@ try:
 
     lines = [line.encode('utf-8') for line in sql_new.split(NL)]
     buf[:] = buf[:start] + lines + buf[end + 1:]
-except Exception, e:
-    print e
+except Exception as e:
+    print(e)
 EOF
 
 endfunction
