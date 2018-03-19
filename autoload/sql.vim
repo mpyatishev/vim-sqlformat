@@ -24,7 +24,8 @@ try:
     sql = NL.join(buf[start:end + 1])
     sql_new = sqlparse.format(sql, reindent=True, keyword_case='upper')
 
-    lines = [line.encode('utf-8') for line in sql_new.split(NL)]
+    lines = [line.encode('utf-8') for line in sql_new.split(NL)] + ['']
+
     buf[:] = buf[:start] + lines + buf[end + 1:]
 except Exception as e:
     print(e)
